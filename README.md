@@ -1,3 +1,3 @@
 Page:
 
-https://nbudhraj.github.io/Lab2/
+https://nbudhraj.github.io/sp21-cse110-lab3/
