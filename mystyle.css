@@ -1,0 +1,263 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Oxygen:wght@300&display=swap');
+
+
+ /* write down comments to make your css easier to read */
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+h2,h3,p{
+    margin: 1pc;
+}
+
+h1{
+    text-align: center;
+
+}
+
+h4{
+    text-align: center;
+}
+
+.week, .day{
+    display: grid;
+    grid-template-columns: repeat(7,40px);
+    justify-content: center;
+}
+
+.day{
+    margin-bottom: 50px;
+}
+
+.day div:first-child{
+    grid-column:5 ;
+}
+
+
+#one{
+    background-color: #e8dfe0;
+}
+
+
+
+figcaption{
+    text-align: center;
+    margin-top: 50px;
+}
+
+figure audio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+
+#two{
+    background-color: rgb(141, 155, 106);
+}
+
+#three{
+    background-color:hsl(199, 14%, 60%);
+}
+
+#form{
+    background-color: beige;
+}
+
+.bar{
+    display: inline;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius:1px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: 20px;
+}
+
+.navbar{
+    
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+}
+
+.steph{
+    margin-left: 25rem;
+}
+
+.dali{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img[src="items/baylor.jpg"]{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+#home{
+    position: relative;
+    right:50px;
+}
+
+header{
+    margin-top:100px;
+}
+
+
+#b2{
+    height:80px;
+}
+
+#b3{
+    height:80px;
+}
+
+#f{
+    height: 80px;
+}
+
+
+
+#d1:hover{
+    background-color: #e8dfe0;
+}
+
+#d2:hover{
+    background-color: rgb(141, 155, 106);
+}
+
+#d3:hover{
+    background-color:hsl(199, 14%, 60%);
+}
+
+#last:hover{
+    background-color: beige;
+}
+
+a[href="#h"], a[href="#b1"], a[href="#b2"], a[href="#b3"], a[href="#f"],:active {
+    color: black;
+    text-decoration: none;
+}
+
+details > ul{
+    font-size: 1.2rem;
+}
+
+
+video{
+    display: block;
+    margin: 0px 0px 0px 35em;
+}
+
+label + input{
+   margin-left: 10px;
+}
+
+label ~ textarea{
+    margin-top: 2ch;
+}
+
+label ~ select {
+    margin-top: 3mm;
+}
+
+
+
+#jeform{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.line-break1{
+    width:100%;
+}
+
+div.dateform{
+    margin-left: 20px;
+}
+
+.low{
+    margin-left: 20px;
+}
+
+.media {
+    margin-left: 20px;
+}
+
+
+@media all and (max-width:900px) {
+    #jeform{
+        flex-direction: column;
+    }
+
+    div.dateform{
+        margin-left:0px;
+    }
+    
+    .low{
+        margin-left: 0px;
+    }
+    
+    .media {
+        margin-left: 0px;
+    }
+
+    .slack{
+        width: 90%;
+    }
+
+    .steph {
+        margin: 0px;
+    }
+
+    .dali{
+        margin: 0px 0px 0px 0px;
+    }
+
+    video{
+        margin: 0px 0px 0px 0px;
+    }
+
+    img[src="items/baylor.jpg"]{
+        margin-left: 0px;
+    }
+
+    .bar{
+        padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+    }
+
+}
+
+@media all and (max-width:500px) {
+    .steph{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .week, .day {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+

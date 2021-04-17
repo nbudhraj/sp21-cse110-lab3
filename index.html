@@ -4,27 +4,80 @@
         <meta charset = "utf-8"/>
         <title>Navika Budhraja's Journal</title>
         <link rel="icon" href= "favicon/favicon.ico?">
+        <link rel="stylesheet" href="mystyle.css">
+        <style>
+            .highlight{
+                background-color: rgb(251, 255, 0);
+            }
+        </style>
     </head>
 
     <body>
-        <div>
+        <div class ="navbar">
             <nav>
-                <p>Navigation Bar</p>
                 <ul>
-                    <li><a href="#day1">Day 1</a></li>
-                    <li><a href="#day2">Day 2</a></li>
-                    <li><a href="#day3">Day 3</a></li>
+                    <span><li class="bar" id = "home"><a href="#h">Home</a></li>
+                    <li class="bar" id = "d1"><a href="#b1">Day 1</a></li>
+                    <li class="bar" id = "d2"><a href="#b2">Day 2</a></li>
+                    <li class="bar" id = "d3"><a href="#b3">Day 3</a></li>
+                    <li class="bar" id = "last"><a href="#f">Form</a></li>
                 </ul>
             </nav>
         </div>
+        
         <hr>
 
+        <div id = "h"></div>
         <header>
-            <h1>My Last 3 Days</h1>
+            <h1 >Navika's Journal Entries</h1>
         </header>
 
+        <h4>April 2021</h4>
+        <div class="week">
+            <div>Su</div>
+            <div>Mo</div>
+            <div>Tu</div>
+            <div>We</div>
+            <div>Th</div>
+            <div>Fr</div>
+            <div>Sa</div>
+        </div>
+        <div class=day>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div class="highlight">5</div>
+            <div class="highlight">6</div>
+            <div class="highlight">7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+            <div>19</div>
+            <div>20</div>
+            <div>21</div>
+            <div>22</div>
+            <div>23</div>
+            <div>24</div>
+            <div>25</div>
+            <div>26</div>
+            <div>27</div>
+            <div>28</div>
+            <div>29</div>
+            <div>30</div>
+        </div>
+
         <main>
-            <section>
+            <section id="one">
+                <div id="b1" style="height:80px"></div>
                 <h2> <span id="day1">Day 1:</span> "Monday Motivation"</h2>
                 <h3>April 5, 2021</h3>
                 <p>Like most people, I often dread Mondays, but this Monday was a pleasant surprise, 
@@ -38,9 +91,9 @@
                 </p>
                 <br>
                 <h3>Highlights of the Day</h3>
-                <ul>
+                <ul class ="high">
                     <li>My MUS17 discussion, where my classmates and I discussed our personal relationship to Hip-Hop
-                            <p>At the beginning our section, the TA played us an interesting and deeply personal song by rapper <b>Jean Grae</b></p>
+                            <p class>At the beginning our section, the TA played us an interesting and deeply personal song by rapper <b>Jean Grae</b></p>
                             <figure>
                                 <figcaption> Listen to the <i>My Story</i> by <a href = "https://en.wikipedia.org/wiki/Jean_Grae">Jean Grae</a></figcaption>
                                 <br>
@@ -50,7 +103,7 @@
                         
                     <li>Learning about Realism, Impressionism, Cubism, and Dadaism in modern art through my MMW15 lectures
                         <p>In class, we learned about the significance of Salvador Dali's famous painting, <i>The Persistance of Memory</i></p>
-                        <img src = "items/dali.jpg" alt="Salvador Dali's The Persisance of Memory"/>
+                        <img class="dali" src = "items/dali.jpg" alt="Salvador Dali's The Persisance of Memory"/>
                         <p><br></p>
                     </li>
 
@@ -78,8 +131,9 @@
                   </details>
             </section>
 
-            <section>
+            <section id="two">
                 <hr>
+                <div id="b2"></div>
                 <h2><span id="day2">Day 2:</span> "Temptation Tuesday"</h2>
                 <h3>April 6, 2021</h3>
 
@@ -105,13 +159,13 @@
 
                     <li>Watching my favorite basketball team, Golden State Warriors, getting a <strong> <a href = "https://www.espn.com/nba/recap?gameId=401307566">win against the Milwaukee Bucks</a></strong>
                         <p><br></p>
-                        <iframe src="https://giphy.com/embed/xT0xeu1uKSdsxk7DoI" width="480" height="270"></iframe>
+                        <iframe class = "steph" src="https://giphy.com/embed/xT0xeu1uKSdsxk7DoI" width="480" height="270"></iframe>
                         <p><br></p>
                     </li>
 
                     <li>Being selected as a <b>team lead</b> for this class and <em>meeting</em> all of my team members!
                         <p><br></p>
-                        <img width="700" src="items/slack.png" alt="Team 8 Slack workspace">
+                        <img class="slack" width="700" src="items/slack.png" alt="Team 8 Slack workspace">
                     </li>
                 </ul>
 
@@ -132,8 +186,9 @@
                   </details>
             </section>
         
-            <section>
+            <section id ="three">
                 <hr>
+                <div id="b3"></div>
                 <h2><span id="day3">Day 3:</span> "Workday Wednesday"</h2>
                 <h3>April 7, 2021</h3>
                 <p>Because I fell behind on work because of my unproductive Tuesday, I made sure that I was 
@@ -183,15 +238,16 @@
                       <li>Create slack for Team 8</li>
                     </ul>
                   </details>
-
+                  <hr>
             </section>
         </main>
 
-        <hr>
-        <section>
+        
+        <section id = "form">
+            <div id="f"></div>
             <h2>Journal Entry Form:</h2>
-            <form>
-                <div>
+            <form id = "jeform">
+                <div class="title">
                     <label>Title for Entry: </label>
                     <input type="text">
                 
@@ -199,20 +255,26 @@
                     <br>
                 </div>
 
-                <div>
+                <div class = "dateform">
                     <label>Enter the date: </label>
                     <input type="date">
                     <br>
                     <br>
                 </div>
 
-                <div>
-                    <label>Summarize the day: </label>
+                <div class="line-break1"></div>
+
+
+                <div class = "sum">
+                    <label class = "sum">Summarize the day: </label>
                     <br>
-                    <textarea></textarea>
+                    <textarea rows="5" cols="50"></textarea>
                     <br>
                     <br>
                 </div>
+
+                <div class="line-break1"></div>
+
 
                 <div>
                     <label>How many highlights that day?</label>
@@ -227,7 +289,8 @@
                     <br>
                 </div>
 
-                <div>
+
+                <div class = "low">
                     <label>How many lowlights that day?</label>
                     <br>
                     <input list="lowlights"/>
@@ -241,6 +304,8 @@
                     <br>
                     <br>
                 </div>
+
+                <div class="line-break1"></div>
 
 
                 <div>
@@ -259,7 +324,7 @@
                     <br>
                 </div>
 
-                <div>
+                <div class="media">
                     <fieldset>
                         <legend>Media to describe the day?</legend>
                         <input type="checkbox" id="video" name="media">
@@ -274,6 +339,8 @@
                     <br>
                     <br>
                 </div>
+
+                <div class="line-break1"></div>
 
                 <div>
                     <button>Submit</button>
