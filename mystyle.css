@@ -79,7 +79,7 @@ img[src="items/baylor.jpg"]{
 
 video{
     display: block;
-    margin: 0px 0px 0px 35em;
+    margin: 0em 0em 0em 35em;
 }
 
 
@@ -94,7 +94,7 @@ video{
     background-color: beige;
 }
 
-/* flexbox formatting*/
+/* flexbox formatting - see media query for third flexbox attribute*/
 #jeform{
     display: flex;
     flex-flow: wrap;
