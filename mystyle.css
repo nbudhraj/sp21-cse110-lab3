@@ -1,14 +1,17 @@
 
+/* Imported Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Oxygen:wght@300&display=swap');
 
-
- /* write down comments to make your css easier to read */
+/* Changed every text element to this new font  */
 *{
     font-family: 'Inter', sans-serif;
 }
 
+/* Formatting header elements*/
+
 h2,h3,p{
-    margin: 1pc;
+    margin: 2pc;
 }
 
 h1{
@@ -20,6 +23,8 @@ h4{
     text-align: center;
 }
 
+
+/* Calendar formatting with grid - see internal CSS also*/
 .week, .day{
     display: grid;
     grid-template-columns: repeat(7,40px);
@@ -34,11 +39,10 @@ h4{
     grid-column:5 ;
 }
 
-
+/* formatting for first journal entry - changing background, formatting images/audio*/
 #one{
     background-color: #e8dfe0;
 }
-
 
 
 figcaption{
@@ -48,24 +52,103 @@ figcaption{
 
 figure audio {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     margin-bottom: 2em;
 }
 
+.dali{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+img[src="items/baylor.jpg"]{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*formatting for second journal entry - changing background, formatting video and media*/
 #two{
     background-color: rgb(141, 155, 106);
 }
+
+.steph{
+    margin-left: 25rem;
+}
+
+video{
+    display: block;
+    margin: 0px 0px 0px 35em;
+}
+
+
+/*formatting for third journal entry - changing background*/
 
 #three{
     background-color:hsl(199, 14%, 60%);
 }
 
+/*formatting for form - changing background, flex layout, margins*/
 #form{
     background-color: beige;
 }
 
+/* flexbox formatting*/
+#jeform{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.line-break1{
+    width:100%;
+}
+
+div.dateform{
+    margin-left: 20px;
+}
+
+.low{
+    margin-left: 20px;
+}
+
+.media {
+    margin-left: 20px;
+}
+
+label + input{
+    margin-left: 10px;
+ }
+ 
+ label ~ textarea{
+     margin-top: 2ch;
+ }
+ 
+ label ~ select {
+     margin-top: 3mm;
+ }
+
+/*Changing flex-direction of the form according to screen size */
+@media all and (max-width:800px) {
+    #jeform{
+        flex-direction: column;
+    }
+
+    div.dateform{
+        margin-left:0px;
+    }
+    
+    .low{
+        margin-left: 0px;
+    }
+    
+    .media {
+        margin-left: 0px;
+    }
+}
+
+/* Navigation Bar Styling*/
 .bar{
     display: inline;
     border-width: 2px;
@@ -89,48 +172,6 @@ figure audio {
     
 }
 
-.steph{
-    margin-left: 25rem;
-}
-
-.dali{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-img[src="items/baylor.jpg"]{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-#home{
-    position: relative;
-    right:50px;
-}
-
-header{
-    margin-top:100px;
-}
-
-
-#b2{
-    height:80px;
-}
-
-#b3{
-    height:80px;
-}
-
-#f{
-    height: 80px;
-}
-
-
-
 #d1:hover{
     background-color: #e8dfe0;
 }
@@ -152,54 +193,38 @@ a[href="#h"], a[href="#b1"], a[href="#b2"], a[href="#b3"], a[href="#f"],:active 
     text-decoration: none;
 }
 
+/* Shift home link further from the other ones*/
+#home{
+    position: relative;
+    right:50px;
+}
+
+/*Header styling*/
+header{
+    margin-top:100px;
+}
+
+/*Journal section adjustment so that navbar doesn't cover content*/
+/* See inline CSS for b1*/
+#b2{
+    height:80px;
+}
+
+#b3{
+    height:80px;
+}
+
+#f{
+    height: 80px;
+}
+
+/*Changing font size of To Do Lists on all sections*/
 details > ul{
     font-size: 1.2rem;
 }
 
-
-video{
-    display: block;
-    margin: 0px 0px 0px 35em;
-}
-
-label + input{
-   margin-left: 10px;
-}
-
-label ~ textarea{
-    margin-top: 2ch;
-}
-
-label ~ select {
-    margin-top: 3mm;
-}
-
-
-
-#jeform{
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-}
-
-.line-break1{
-    width:100%;
-}
-
-div.dateform{
-    margin-left: 20px;
-}
-
-.low{
-    margin-left: 20px;
-}
-
-.media {
-    margin-left: 20px;
-}
-
-
-@media all and (max-width:900px) {
+/*change formatting of items based on screen size w/ width 900px & smaller*/
+@media (max-width:900px) {
     #jeform{
         flex-direction: column;
     }
@@ -242,13 +267,15 @@ div.dateform{
 
 }
 
-@media all and (max-width:500px) {
+/*change formatting of items based on screen size w/ width 500px & smaller*/
+@media (max-width:500px) {
     .steph{
         width: 90%;
     }
 }
 
-@media screen and (min-width:900px) {
+/*change formatting of items based on screen size w/ width 900px & larger*/
+@media (min-width:900px) {
     .week, .day {
         font-size: 20px;
     }
